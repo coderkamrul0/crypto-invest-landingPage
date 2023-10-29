@@ -1,4 +1,4 @@
-import BannerImage from "../../images/magnifying_glass.png";
+import BannerImage from "../../assets/images/magnifying_glass.png";
 import {
   FaFacebookF,
   FaLinkedinIn,
