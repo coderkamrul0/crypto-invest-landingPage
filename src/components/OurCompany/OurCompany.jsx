@@ -1,12 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 import desktopImage from "../../assets/images/desktop.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 function OurCompany() {
   return (
     <div>
       <div>
         <div className="max-w-screen-xl mx-auto px-5 md:flex items-center gap-10">
-          <div className="md:w-1/2 relative mb-5 md:mb-0">
+          <div data-aos="fade-right" className="md:w-1/2 relative mb-5 md:mb-0">
             <div className="absolute inset-0 -z-10 flex items-center justify-center">
               <div className="h-2/5 w-2/5 rounded-full bg-[#00D094] blur-3xl shadow-lg"></div>
             </div>
@@ -24,7 +27,7 @@ function OurCompany() {
               <p className="text-lg">Satisfied Customers</p>
             </div>
           </div>
-          <div className="md:w-1/2">
+          <div data-aos="fade-left" className="md:w-1/2">
             <h2 className="text-3xl md:text-5xl font-bold">
               Meet <span className="text-[#0A4FD5]">Our Company</span> Unless
               Miss The Opportunity

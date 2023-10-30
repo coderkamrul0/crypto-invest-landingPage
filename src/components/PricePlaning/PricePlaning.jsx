@@ -1,4 +1,7 @@
 import { FaCheckSquare } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 function PricePlaning() {
   return (
@@ -16,7 +19,7 @@ function PricePlaning() {
         </div>
 
         <div className="md:flex justify-between items-center">
-          <div className="bg-white px-10 py-5 rounded-2xl border-2 border-white hover:border-[#00D094] transition-all cursor-pointer mb-5 md:mb-0">
+          <div data-aos="fade-right" className="bg-white px-10 py-5 rounded-2xl border-2 border-white hover:border-[#00D094] transition-all cursor-pointer mb-5 md:mb-0">
             <div className="pb-7">
               <h5 className="font-bold uppercase text-xl">Basic</h5>
               <h4 className="text-3xl font-bold py-3">
@@ -44,7 +47,7 @@ function PricePlaning() {
             </ul>
             <button className="w-full border-2 border-[#00D094] py-2 rounded-2xl text-lg pb-0 hover:bg-[#00D094] hover:text-white transition-all mt-5">Chose Plan</button>
           </div>
-          <div className="bg-white px-10 py-5 rounded-2xl border-2 border-[#00D094] mb-5 md:mb-0">
+          <div data-aos="fade-up" className="bg-white px-10 py-5 rounded-2xl border-2 border-[#00D094] mb-5 md:mb-0">
             <div className="pb-7">
               <h5 className="font-bold uppercase text-xl">Standard</h5>
               <h4 className="text-3xl font-bold py-3">
@@ -75,7 +78,7 @@ function PricePlaning() {
             </ul>
             <button className="w-full border-2 border-[#00D094] py-2 rounded-2xl text-lg pb-0 bg-[#00D094] hover:text-white transition-all mt-5">Chose Plan</button>
           </div>
-          <div className="bg-white px-10 py-5 rounded-2xl border-2 border-white hover:border-[#00D094] transition-all cursor-pointer mb-5 md:mb-0">
+          <div data-aos="fade-left" className="bg-white px-10 py-5 rounded-2xl border-2 border-white hover:border-[#00D094] transition-all cursor-pointer mb-5 md:mb-0">
             <div className="pb-7">
               <h5 className="font-bold uppercase text-xl">premium</h5>
               <h4 className="text-3xl font-bold py-3">

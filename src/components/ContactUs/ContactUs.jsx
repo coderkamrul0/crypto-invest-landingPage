@@ -8,12 +8,15 @@ import {
   FaEnvelope,
   FaLocationArrow,
 } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 function ContactUs() {
   return (
     <div>
       <div className="max-w-screen-xl mx-auto px-5 py-10 md:flex gap-20">
-        <div className="md:w-1/3 flex flex-col gap-5 md:gap-14">
+        <div data-aos="fade-right" className="md:w-1/3 flex flex-col gap-5 md:gap-14">
           <h5 className="text-3xl font-semibold">
             Lets{" "}
             <span className="text-[#0A4FD5]">
@@ -69,7 +72,7 @@ function ContactUs() {
             </div>
           </div>
         </div>
-        <div className="md:w-2/3">
+        <div data-aos="fade-left" className="md:w-2/3">
           <form className="pb-8 mb-4 pt-5 md:pt-0">
             <div className="mb-4">
               <label

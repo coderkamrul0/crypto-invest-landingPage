@@ -63,7 +63,7 @@ function ClientReview() {
 
   return (
     <div className="bg-[#F1F6FD]">
-      <div className="max-w-screen-xl mx-auto px-5 pb-10">
+      <div className="max-w-screen-xl mx-auto px-5 pb-20">
         <div className="pb-10">
           <h4 className="text-3xl md:text-5xl font-semibold">
             Connect With <span className="text-[#0A4FD5]">Our Clients</span>

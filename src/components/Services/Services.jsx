@@ -5,6 +5,9 @@ import service3Img from "../../assets/images/service3.png";
 import service4Img from "../../assets/images/service4.png";
 import service5Img from "../../assets/images/service5.png";
 import service6Img from "../../assets/images/service6.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const services = [
   {
@@ -71,7 +74,7 @@ function Services() {
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {services.map((service) => (
-              <div
+              <div data-aos="fade-up"
                 key={service.id}
                 className="flex flex-col items-center gap-4 px-16 text-center py-14 rounded-xl hover:cursor-pointer transition-all duration-300"
                 style={{

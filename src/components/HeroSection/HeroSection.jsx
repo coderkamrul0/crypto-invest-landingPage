@@ -9,12 +9,15 @@ import {
   FaRegPlayCircle,
 } from "react-icons/fa";
 import './HeroSection.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 function HeroSection() {
   return (
-    <div>
+    <div className="pt-32 md:pt-0">
       <div className="max-w-screen-xl mx-auto px-5 md:flex items-center min-h-screen">
-        <div className="md:w-1/2">
+        <div data-aos="fade-right" className="md:w-1/2">
           <h1 className=" text-3xl md:text-5xl lg:text-6xl font-bold">
             Invest Your Money With{" "}
             <span className="text-[#0A4FD5]">Higher Return</span>
