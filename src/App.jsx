@@ -1,3 +1,4 @@
+import ClientReview from "./components/ClientReview/ClientReview"
 import HeroSection from "./components/HeroSection/HeroSection"
 import OurCompany from "./components/OurCompany/OurCompany"
 import PricePlaning from "./components/PricePlaning/PricePlaning"
@@ -11,6 +12,7 @@ function App() {
       <OurCompany/>
       <Services/>
       <PricePlaning/>
+      <ClientReview/>
     </>
   )
 }
